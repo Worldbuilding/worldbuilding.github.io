@@ -77,14 +77,23 @@ defaults:
       topnav: topnav
   -
     scope:
+      path: "kaztron"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: kaztron_sidebar
+      topnav: topnav
+  -
+    scope:
       path: ""
       type: "tooltips"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       tooltip: true
-
   -
     scope:
       path: ""
@@ -100,10 +109,7 @@ defaults:
 
 sidebars:
 - home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
-- other
+- kaztron_sidebar
 
 # the description is used in the feed.xml file
 description: >

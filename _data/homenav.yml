@@ -1,0 +1,37 @@
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+
+home_sections:
+- heading: "Projects"
+  items:
+  - title: KazTron
+    description: Our resident Discord helper bot!
+    icon: "fas fa-eye"
+    url: /kaztron
+    button: "Docs"
+  - title: Spotlight
+    description: Apply to feature your world on Discord's World Spotlight!
+    icon: "fas fa-star"
+    url: /spotlight
+    button: "Read"
+  - title: Gridbox
+    description: Authorisation failed.
+    icon: "fas fa-globe"
+    url: #
+    button: "Access"
+
+
+- heading: "Links"
+  items:
+  - title: /r/worldbuilding
+    description: Home sweet home!
+    icon: "fab fa-reddit-alien"
+    external_url: http://reddit.com/r/worldbuilding
+  - title: Find us on Discord!
+    description: Come chat with a vibrant community!
+    icon: "fab fa-discord"
+    button: "Join "
+    external_url: http://discord.gg/worldbuilding
+  - title: GitHub
+    description: See the code behind the hood!
+    icon: "fab fa-github"
+    external_url: http://github.com/worldbuilding
