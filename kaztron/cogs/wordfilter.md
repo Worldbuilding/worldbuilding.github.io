@@ -1,6 +1,6 @@
 ---
 title: "Cogs: WordFilter"
-last_updated: 9 February 2018
+last_updated: 21 February 2018
 summary: "The WordFilter cog watches for configurable words or expressions in user messages, and either warns moderators or auto-deletes the message when it detects a watched word."
 ---
 
@@ -9,7 +9,7 @@ The **WordFilter** cog is intended to be used as a moderating tool to watch the 
 * `delete` list: Any messages that match will be auto-deleted, and moderators are notified.
 * `warn` list: Moderators are notified of the matching message, but no further action is taken.
 
-Moderator notifications are output to either #mods or #bot_output. The output can be changed between these two channels with the `.filter switch` command.
+Moderator notifications are output to either #mods or #bot-output. The output can be changed between these two channels with the `.filter switch` command.
 
 ## 1. Filter string syntax
 
@@ -20,17 +20,17 @@ The special character `%` will match a word boundary (any non-letter character -
 * `foo%` : Matches any word that *ends* with `foo`. For example, `zoboomafoo` will match, but `foobar` will *not*.
 * `%foo%` : Matches whole words only.
 
-{% include tip.html content="Filters are always case insensitive." %}
-
 You can also refer to the table below to see examples of which method will catch which sub-strings.
 
 ![](http://i.imgur.com/d4soa1X.png)
+
+{% include tip.html content="Filters are always case insensitive." %}
 
 ## 2. filter
 
 For all sub-commands except `.filter switch`, you usually need to specify the filter type, either `del` (the auto-delete filter list) or `warn` (the warn-only filter list). You can also use the shorthand `w` or `d`.
 
-{% include tip.html content="All sub-commands support single-letter shorthand." %}
+{% include tip.html content="For convenience, all sub-commands support a single-letter shorthand. Check each command's Usage section." %}
 
 ## 2.1 list (shorthand: l)
 

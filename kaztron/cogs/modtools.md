@@ -1,6 +1,6 @@
 ---
 title: "Cogs: ModTools"
-last_updated: 9 February 2018
+last_updated: 21 February 2018
 summary: "The ModTools cog provides miscellaneous tools for moderators."
 ---
 

@@ -180,7 +180,7 @@ Set the canonical name by which a user is known. This replaces the previous name
 
 Set or remove alternative names a user is known under.
 
-Suggested usage: `/u/RedditUsername` for Reddit usernames, `R:Nickname` for IRC registered nicknames, `nick!username@hostname` masks for unregistered IRC users (or whatever format you prefer to communicate the relevant information, this is freeform).
+{% include tip.html content="Suggested usage: `/u/RedditUsername` for Reddit usernames, `R:Nickname` for IRC registered nicknames, `nick!username@hostname` masks for unregistered IRC users." %}"
 
 **Usage:**
 * `.notes alias <add|rem> <user> <alias>`
@@ -203,7 +203,7 @@ Suggested usage: `/u/RedditUsername` for Reddit usernames, `R:Nickname` for IRC 
 Group and ungroup users together.
 
 An identity group identifies users which are all considered to be the same
-individual. The .notes command will show the user info and records for both simultaneously,
+individual. The `.notes` command will show the user info and records for both simultaneously,
 if one of them is looked up. The users remain separate and can be removed from the group
 later.
 
@@ -214,6 +214,8 @@ Group users together.
 If one user is not in a group, that user is added to the other user's group. If both users are in separate groups, both groups are merged. This is irreversible.
 
 See [1.8 group](#18-group) for more information on grouping.
+
+{% include warning.html content="Be careful about grouping users already in separate groups! This will **irreversibly** merge both groups." %}
 
 **Usage:**
 * `.notes group add <user1> <user2>`
@@ -234,6 +236,8 @@ See [1.8 group](#18-group) for more information on grouping.
 Remove a user from the group.
 
 See [1.8 group](#18-group) for more information on grouping.
+
+{% include tip.html content="This command takes only **one** user as argument, not two." %}
 
 **Usage:**
 * `.notes group rem <user>`

@@ -1,6 +1,6 @@
 ---
 title: "Cogs: Sprint"
-last_updated: 16 February 2018
+last_updated: 21 February 2018
 summary: "The Sprint cog allows users to hold writing sprint events, in which several users get together to work on a writing project for a fixed amount of time and compete on productivity."
 ---
 
@@ -23,11 +23,15 @@ Get writing!
 
 ## 1. sprint (shorthand: w)
 
+{% include tip.html content="For convenience, most sub-commands support a single-letter shorthand. Check each command's Usage section." %}
+
 ### 1.1. status (shorthand: ?)
 
 Get the current status of the sprint.
 
-**Usage:** `.w status`
+**Usage:**
+* `.w status`
+* `.w ?`
 
 **Arguments:**
 * None
@@ -44,7 +48,9 @@ After starting the sprint, you need to join the sprint with `.w join` in order t
 
 You cannot use this command if a sprint is currently running. In this case, join the ongoing sprint or wait until it's over.
 
-**Usage:** `.w start [duration [delay]]`
+**Usage:**
+* `.w start [duration [delay]]`
+* `.w s [duration [delay]]`
 
 **Arguments:**
 * `[duration]`: Optional. The amount of time, in minutes, for the sprint to last. Default: 25 minutes.
@@ -65,7 +71,9 @@ Cancel the current sprint.
 
 This can only be done by the creator of the sprint or moderators, and only if a sprint is ongoing or is about to start.
 
-**Usage:** `.w stop`
+**Usage:**
+* `.w stop`
+* `.w x`
 
 **Arguments:**
 * None
@@ -82,7 +90,9 @@ You can also use this command to fix your initial wordcount, if you made a mista
 
 This will only work if a sprint is ongoing or has been created with `.w start`.
 
-**Usage:** `.w join <wordcount>`
+**Usage:**
+* `.w join <wordcount>`
+* `.w j <wordcount>`
 
 **Arguments:**
 * `<wordcount>`: Required. Your initial wordcount, before the start of the sprint. When you report your wordcount at the end of the sprint, your total words written during the sprint will automatically be calculated.
@@ -100,7 +110,9 @@ Leave a sprint you previously joined.
 
 You should normally only need to use this if you realise you can't stay for the entire sprint, or otherwise can't participate in the sprint.
 
-**Usage:** `.w leave`
+**Usage:**
+* `.w leave`
+* `.w l`
 
 **Arguments:**
 * None
@@ -112,11 +124,14 @@ You should normally only need to use this if you realise you can't stay for the 
 **Example:**
 * `.w leave`
 
-### 1.6. wordcount (shorthand: c)
+### 1.6. wordcount (shorthand: c, wc)
 
 Report your wordcount at the end of the sprint.
 
-**Usage:** `.w c <wordcount>`
+**Usage:**
+* `.w cordcount <wordcount>`
+* `.w wc <wordcount>`
+* `.w c <wordcount>`
 
 **Arguments:**
 * `<wordcount>`: Required. Your final wordcount at the end of the sprint. The bot will automatically calculate your total words written during the sprint.

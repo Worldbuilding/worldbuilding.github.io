@@ -7,11 +7,10 @@ If you think you've discovered a bug in KazTron:
 3. **Mods only:** Gather any messages in `#bot-output` that happened at the same time as your attempted command.
 4. Check if the bug is already reported on our [issue tracker](https://github.com/Worldbuilding/KazTron/issues). If yes, don't submit a new issue: comment on the old one if you think you have additional useful information.
 4. Prepare a bug report with enough information for us to track it down:
-    1. Who are you on the Discord?
-    2. What were you trying to do? What is the *exact* command you tried to use, and where did you try to use it (what channel)?
+    1. Who are you on the Discord? Some commands depend on user roles.
+    2. What were you trying to do? What is the *exact* command you tried to use, and what channel did you try to use it in?
     3. What did you expect the command to do?
-    4. What did the command actually do?
-    5. Provide any error messages output in the channel, by PM or in `#bot-output`, as gathered earlier.
+    4. What did the command actually do? Also provide any error messages output in the channel, by PM or in `#bot-output`, as gathered earlier.
 5. Send us the bug report: if you have a GitHub account, you can submit an issue to the [issue tracker](https://github.com/Worldbuilding/KazTron/issues). Otherwise, you can submit it in #meta on the Discord server. **Mods:** Ping `@Bot DevOps Team` in #bot-issues.
 
 ## Unresponsive bot

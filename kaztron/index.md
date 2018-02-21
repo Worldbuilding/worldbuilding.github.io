@@ -6,9 +6,9 @@ KazTron is the /r/worldbuilding Discord server's resident helper bot! It mostly 
 
 This website documents the usage of the various commands, organised by module. Note that not all modules may be loaded, depending on needs as judged by the moderation team.
 
-{% include note.html content="Setting up and running your own instance of KazTron is outside the scope of this manual. For any inquiries, you can get in touch with us via Reddit modmail (click the Feedback link above) or the #meta channel of our Discord server." %}
+{% include note.html content="Setting up a copy of KazTron is outside the scope of this manual. For any inquiries, you can get in touch with us via [Reddit modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fworldbuilding&subject=KazTron&message=I%27m%20writing%20to%20you%20about%20KazTron.%0D%0D%3CType%20your%20comments%20here%3E) or the #meta channel of our Discord server." %}
 
-{% include important.html content="KazTron is designed for use on only one Discord server at a time. It is not possible to invite it to other servers. To get KazTron, you would need to host it yourself on a separate bot account." %}
+{% include important.html content="KazTron is designed for use on one Discord server at a time. It is not possible to invite it to other servers: you would need to host it yourself on a separate bot account." %}
 
 ## How to use KazTron commands
 
@@ -20,11 +20,9 @@ KazTron is always monitoring all text channels for commands. The structure of a 
 
 The prefix, in this case `.`, is how KazTron identifies a command intended for it, versus any normal message. This is followed by the command name, a space, and then any number of arguments separated by spaces (very similarly to command line tools, IRC bots, and IRC NickServ/ChanServ commands). If an argument contains spaces, you should enclose it in quotes to ensure it gets interpreted as a single argument.
 
-{% include note.html content="Some commands are restricted based on user account and text channel. For example, some commands are moderator-only, others can only be used on specific channels." %}
+{% include note.html content="Some commands are restricted based on user account and text channel&mdash;for example, moderator-only commands or `.roll` only usable in #tabletop." %}
 
-{% include tip.html content="If you use a command KazTron does not know, it will PM you to let you know." %}
-
-{% include tip.html content="In order to avoid spamming channels, some commands will cause KazTron to delete the message containing your command and PM you to confirm the action. If you see your command message instantly disappear, don't panic&mdash;check your PMs!" %}
+{% include tip.html content="If you see your command message instantly disappear, don't panic&mdash;check your PMs! For *some* commands, this is done to avoid channel spam." %}
 
 ### Examples
 
@@ -46,7 +44,7 @@ In addition to this manual, you can always get contextual help from within Disco
 
 For example, `.help spotlight` will give you general information on the spotlight bot features, whereas `.help spotlight join` will specifically tell you about the "join" subcommand and its syntax. (In this case, the commands are both very simple, though!)
 
-{% include note.html content="Help files are contextual: KazTron will only list commands that you're allowed to use in the channel where you asked for help. So you won't see `.roll` unless you ask for `.help` in #tabletop, and you won't see mod-only commands unless you're a moderator." %}
+{% include tip.html content="Ask for `.help` in the same channel that you want to use commands in. KazTron only shows commands you're allowed to use based on your account and the channel you ask in." %}
 
 ## The Team
 
