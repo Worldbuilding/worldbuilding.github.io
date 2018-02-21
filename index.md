@@ -1,6 +1,5 @@
 ---
 title: "Index"
-sidebar: mydoc_sidebar
 permalink: index.html
 toc: false
 ---
@@ -24,7 +23,7 @@ toc: false
                 {% if item.external_url %}
                 <a href="{{ item.external_url }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
                 {% else %}
-                <a href="{{ item.url | remove: "/" }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
+                <a href="{{ item.url | remove: "/" | prepend: site.baseurl }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
                 {% endif %}
             </div>
          </div>

@@ -9,7 +9,7 @@ site_title: /r/Worldbuilding Network
 # footer
 company_name: /r/worldbuilding network moderators and contributors
 
-github_editme_path: worldbuilding/worldbuilding.github.io/blob/master/
+github_editme_path: worldbuilding/worldbuilding.github.io/blob/master
 
 # for disqus comments
 disqus_shortname:
@@ -73,7 +73,7 @@ defaults:
       layout: "page"
       comments: false
       search: true
-      sidebar: home_sidebar
+      sidebar: home
       topnav: topnav
   -
     scope:
@@ -83,7 +83,7 @@ defaults:
       layout: "page"
       comments: false
       search: true
-      sidebar: kaztron_sidebar
+      sidebar: kaztron
       topnav: topnav
   -
     scope:
@@ -102,14 +102,15 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: home
       topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- kaztron_sidebar
+- home
+- kaztron
+- other
 
 # the description is used in the feed.xml file
 description: >
