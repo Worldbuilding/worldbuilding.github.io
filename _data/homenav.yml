@@ -4,17 +4,17 @@ home_sections:
 - heading: "Projects"
   items:
   - title: KazTron
-    description: Our resident Discord helper bot!
+    description: Our resident Discord helper bot! Consult the manual here.
     icon: "fas fa-eye"
     url: /kaztron
     button: "Docs"
   - title: Spotlight
-    description: Apply to feature your world on Discord's World Spotlight!
+    description: Apply to feature your world on the Discord server!
     icon: "fas fa-star"
     url: /spotlight
     button: "Read"
   - title: Gridbox
-    description: Authorisation failed.
+    description: Authorisation failed. This incident will be reported.
     icon: "fas fa-globe"
     url: #
     button: "Access"
@@ -27,7 +27,7 @@ home_sections:
     icon: "fab fa-reddit-alien"
     external_url: http://reddit.com/r/worldbuilding
   - title: Find us on Discord!
-    description: Come chat with a vibrant community!
+    description: Chat with a vibrant community!
     icon: "fab fa-discord"
     button: "Join "
     external_url: http://discord.gg/worldbuilding
