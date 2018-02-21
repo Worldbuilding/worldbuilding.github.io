@@ -1,0 +1,100 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: KazTron
+  version: 2.0 beta 3
+  folders:
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Home
+      url: /kaztron/index.html
+      output: web, pdf
+      type: homepage
+
+    - title: How to read this manual
+      url: /kaztron/about-manual.html
+      output: web, pdf
+
+    - title: Known Issues
+      external_url: https://github.com/Worldbuilding/KazTron/issues
+      output: web, pdf
+
+    - title: Troubleshooting
+      url: /kaztron/troubleshooting.html
+      output: web, pdf
+
+  - title: Releases &amp; Development
+    output: web, pdf
+    folderitems:
+
+    - title: GitHub
+      external_url: https://github.com/worldbuilding/kaztron
+      output: web, pdf
+
+    - title: Roadmap
+      external_url: https://github.com/Worldbuilding/KazTron/milestones
+      output: web, pdf
+
+    - title: Release Notes - v2.0 beta 3
+      external_url: https://github.com/Worldbuilding/KazTron/releases/tag/v1.3b3
+      output: web, pdf
+
+    - title: Release Notes - v2.0 beta 2
+      external_url: https://github.com/Worldbuilding/KazTron/releases/tag/v1.3b2
+      output: web, pdf
+
+    - title: Release Notes - v2.0 beta 1
+      external_url: https://github.com/Worldbuilding/KazTron/releases/tag/v1.3b1
+      output: web, pdf
+
+    - title: All releases
+      external_url: https://github.com/Worldbuilding/KazTron/releases
+      output: web, pdf
+
+  - title: Commands Reference
+    output: web, pdf
+    folderitems:
+
+    - title: Core
+      url: /kaztron/cogs/core.html
+      output: web, pdf
+
+    - title: Dice
+      url: /kaztron/cogs/dice.html
+      output: web, pdf
+
+    - title: Spotlight
+      url: /kaztron/cogs/spotlight.html
+      output: web, pdf
+
+    - title: Welcome
+      url: /kaztron/cogs/welcome.html
+      output: web, pdf
+
+    - title: Writing Sprints (v2.1 draft)
+      url: /kaztron/cogs/sprint.html
+      output: web, pdf
+
+  - title: Moderator Tools Reference
+    output: web, pdf
+    folderitems:
+
+    - title: Mod Notes
+      url: /kaztron/cogs/modnotes.html
+      output: web, pdf
+
+    - title: Mod Tools
+      url: /kaztron/cogs/modtools.html
+      output: web, pdf
+
+    - title: Role  Manager
+      url: /kaztron/cogs/role_man.html
+      output: web, pdf
+
+    - title: Word Filter
+      url: /kaztron/cogs/wordfilter.html
+      output: web, pdf

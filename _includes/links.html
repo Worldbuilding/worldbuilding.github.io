@@ -6,15 +6,15 @@
 {% for folderitem in folder.folderitems %}
 {% if folderitem.url != null %}
 {% if folderitem.url contains "html#" %}
-[{{folderitem.url | remove: "/" }}]: {{ folderitem.url | remove: "/" | prepend: site.baseurl }}
+[{{folderitem.url | remove: "/" }}]: {{ folderitem.url | prepend: site.baseurl }}
 {% else %}
-[{{folderitem.url | remove: "/"  | remove: ".html" }}]: {{ folderitem.url | remove: "/" | prepend: site.baseurl }}
+[{{folderitem.url | remove: "/"  | remove: ".html" }}]: {{ folderitem.url | prepend: site.baseurl }}
 {% endif %}
 {% endif %}
 {% for subfolders in folderitem.subfolders %}
 {% for subfolderitem in subfolders.subfolderitems %}
 {% if subfolderitem.url != null %}
-[{{subfolderitem.url | remove: "/"  | remove: ".html"}}]: {{ subfolderitem.url | remove: "/" | prepend: site.baseurl }}
+[{{subfolderitem.url | remove: "/"  | remove: ".html"}}]: {{ subfolderitem.url | prepend: site.baseurl }}
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -29,7 +29,7 @@
 {% for entry in site.data.topnav.topnav %}
 {% for item in entry.items %}
 {% if item.external_url == null %}
-[{{item.url | remove: "/" | remove: ".html"}}]: {{item.url | remove: "/" | prepend: site.baseurl }}
+[{{item.url | remove: "/" | remove: ".html"}}]: {{item.url | prepend: site.baseurl }}
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -40,7 +40,7 @@
 {% for folder in entry.folders %}
 {% for folderitem in folder.folderitems %}
 {% if folderitem.external_url == null %}
-[{{folderitem.url | remove: "/"  | remove: ".html"}}]: {{folderitem.url | remove: "/" | prepend: site.baseurl }}
+[{{folderitem.url | remove: "/"  | remove: ".html"}}]: {{folderitem.url | prepend: site.baseurl }}
 {% endif %}
 {% endfor %}
 {% endfor %}
