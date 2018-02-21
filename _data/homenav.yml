@@ -5,7 +5,7 @@ home_sections:
   items:
   - title: KazTron
     description: Our resident Discord helper bot! Consult the manual here.
-    icon: "fas fa-eye"
+    image: kaztron.png
     url: /kaztron
     button: "Docs"
   - title: Spotlight

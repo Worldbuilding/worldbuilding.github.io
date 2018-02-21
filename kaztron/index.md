@@ -55,7 +55,7 @@ KazTron is developed and operated by:
 <div class="row">
     {% for author in site.data.kaztron.authors %}
     <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default text-center">
+        <div class="panel panel-default nav-panel text-center">
             <div class="panel-heading">
                 <!-- TODO: user icons -->
                 <span class="fa-stack fa-5x">

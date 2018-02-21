@@ -10,12 +10,16 @@ toc: false
 <div class="row">
     {% for item in section.items %}
     <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default text-center">
+        <div class="panel panel-default nav-panel text-center">
             <div class="panel-heading">
+                {% if item.image %}
+                <img src="{{ site.baseurl }}/images/{{ item.image }}">
+                {% else %}
                 <span class="fa-stack fa-5x">
                       <i class="fas fa-circle fa-stack-2x text-primary"></i>
                       <i class="{{ item.icon }} fa-stack-1x fa-inverse"></i>
                 </span>
+                {% endif %}
             </div>
             <div class="panel-body">
                 <h4>{{ item.title }}</h4>
