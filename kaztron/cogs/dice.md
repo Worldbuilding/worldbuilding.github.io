@@ -17,7 +17,7 @@ Arguments:
 * `<sides>`: Number of sides for each die.
 * Do **not** include spaces between the arguments and the `d`.
 
-**Channels:** #tabletop, #bot_test
+**Channels:** #tabletop, #bot-test
 
 **Usable By:** Anyone
 
@@ -33,6 +33,6 @@ Rolls four dice for the FATE tabletop roleplaying game system.
 
 **Arguments:** None
 
-**Channels:** #tabletop, #bot_test
+**Channels:** #tabletop, #bot-test
 
 **Usable By:** Anyone

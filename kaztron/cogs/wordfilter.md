@@ -125,7 +125,7 @@ Remove a filter word/expression by list index.
 
 Change the bot output channel for wordfilter warnings.
 
-Switches between the configured filter warning channel and the general bot output channel (#mods and #bot_output at time of writing).
+Switches between the configured filter warning channel and the general bot output channel (#mods and #bot-output at time of writing).
 
 **Usage:**
 * `.filter switch`
