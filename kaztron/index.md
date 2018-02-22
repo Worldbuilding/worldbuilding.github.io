@@ -62,7 +62,7 @@ KazTron is developed and operated by:
                 </span>
             </div>
             <div class="panel-body">
-                <h4>{{ author.name }}</h4>
+                <h4 class="no-toc no-anchor">{{ author.name }}</h4>
                 <p>{{ author.role }}</p>
                 {% if author.github != null %}
                 <div><a href="https://github.com/{{ author.github | downcase }}"><i class="fab fa-github"></i> {{author.github}}</a></div>

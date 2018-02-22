@@ -22,7 +22,7 @@ toc: false
                 {% endif %}
             </div>
             <div class="panel-body">
-                <h4>{{ item.title }}</h4>
+                <h4 class="no-toc no-anchor">{{ item.title }}</h4>
                 <p>{{ item.description }}</p>
                 {% if item.external_url %}
                 <a href="{{ item.external_url }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
