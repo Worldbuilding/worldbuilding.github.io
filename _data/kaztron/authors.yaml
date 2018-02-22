@@ -1,3 +1,4 @@
+authors:
 - name: Kazandaki
   role: Founder, developer
   github: Kazandaki
@@ -13,3 +14,19 @@
 - name: cxcfme
   role: Sysadmin
   github: cxcfme
+
+contributors:
+- name: Teeteegone
+  role: "KazTron \"cat\" icon artwork"
+  links: []
+
+# Just an example of adding a link to contributors, for later
+# - name: ContributorMan
+#   role: Made contributions
+#   links:
+#    - url: http://github.example/contributorman
+#      title: Tumblr
+#      icon: "fab fa-github"
+#    - url: http://contributorman.tumblr.example
+#      title: Tumblr
+#      icon: "fab fa-tumblr-square"

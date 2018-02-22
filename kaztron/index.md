@@ -51,7 +51,7 @@ For example, `.help spotlight` will give you general information on the spotligh
 KazTron is developed and operated by:
 
 <div class="row">
-    {% for author in site.data.kaztron.authors %}
+    {% for author in site.data.kaztron.authors.authors %}
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default nav-panel text-center">
             <div class="panel-heading">
@@ -78,5 +78,11 @@ KazTron is developed and operated by:
     </div>
     {% endfor %}
 </div>
+
+### Contributors
+
+{% for contributor in site.data.kaztron.authors.contributors %}
+* **{{ contributor.name }}** {% for link in contributor.links %}<a class="icon-link" href="{{link.url}}" target="_blank" title="{{link.title}}"><i class="{{link.icon}}"></i></a>{% endfor %}: {{contributor.role}}
+{% endfor %}
 
 {% include links.html %}

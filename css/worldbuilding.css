@@ -18,3 +18,8 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+a.btn::after,
+a.icon-link::after {
+    content: none;
+}
