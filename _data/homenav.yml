@@ -14,9 +14,9 @@ home_sections:
     url: /spotlight
     button: "Read"
   - title: Gridbox
-    description: Authorisation failed. This incident will be reported.
+    description: SI Data Portal
     icon: "fas fa-globe"
-    url: #
+    url: /gridbox
     button: "Access"
 
 
