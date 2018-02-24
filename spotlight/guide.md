@@ -1,6 +1,7 @@
 ---
 title: "Guide to a Successful Spotlight"
 last_updated: 24 February 2018
+author: Yazuki
 summary: "Is your Spotlight coming up soon? This guide will help you prepare and present a great World Spotlight!"
 ---
 

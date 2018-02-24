@@ -32,3 +32,13 @@ a.icon-link::after {
 .post-content blockquote {
     font-size: inherit;
 }
+
+.post-title-main, .post-author {
+    display: inline-block;
+}
+
+.post-author {
+    font-style: italic;
+    margin-left: 0.5em;
+    color: #808080;
+}
