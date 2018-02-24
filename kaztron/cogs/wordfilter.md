@@ -22,7 +22,12 @@ The special character `%` will match a word boundary (any non-letter character -
 
 You can also refer to the table below to see examples of which method will catch which sub-strings.
 
-![](http://i.imgur.com/d4soa1X.png)
+|           | foo | %foo | foo% | %foo% |
+|:----------|:---:|:----:|:----:|:-----:|
+| foo       | <i class="fas fa-check text-success"></i> |<i class="fas fa-check text-success"></i> |<i class="fas fa-check text-success"></i> |<i class="fas fa-check text-success"></i> |
+| foobar    | <i class="fas fa-check text-success"></i> | <i class="fas fa-check text-success"></i> | | |
+| barfoo    |<i class="fas fa-check text-success"></i> | | <i class="fas fa-check text-success"></i> | |
+| barfoobar | <i class="fas fa-check text-success"></i> | | | |
 
 {% include tip.html content="Filters are always case insensitive." %}
 
