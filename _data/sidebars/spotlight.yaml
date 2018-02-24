@@ -1,0 +1,23 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: World Spotlight
+  head_icon: "fas fa-star"
+  folders:
+
+  - title: Spotlight
+    output: web, pdf
+    folderitems:
+    - title: General Information
+      type: homepage
+      url: /spotlight/
+      output: web, pdf
+
+    - title: Apply to host a Spotlight!
+      external_url: https://docs.google.com/forms/d/e/1FAIpQLSdiLqMST5ORPDyAGLaCvuhn6_42R8h6bShnbk0WZ9itfukMCg/viewform
+      output: web, pdf
+
+    - title: Guide to a Successful Spotlight
+      url: /spotlight/guide.html
+      output: web, pdf

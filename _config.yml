@@ -87,6 +87,16 @@ defaults:
       topnav: topnav
   -
     scope:
+      path: "spotlight"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: spotlight
+      topnav: topnav
+  -
+    scope:
       path: ""
       type: "tooltips"
     values:

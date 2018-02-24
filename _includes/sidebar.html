@@ -3,6 +3,11 @@
 <ul id="mysidebar" class="nav">
   {% if sidebar[0].head_image %}
   <li class="sidebarImage"><img src="{{ site.baseurl }}/images/{{sidebar[0].head_image}}"></li>
+  {% elsif sidebar[0].head_icon %}
+  <li class="sidebarImage fa-stack fa-7x">
+      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+      <i class="{{ sidebar[0].head_icon }} fa-stack-1x fa-inverse"></i>
+  </li>
   {% endif %}
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
