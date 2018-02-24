@@ -12,7 +12,7 @@ entries:
     folderitems:
 
     - title: Home
-      url: /kaztron/index.html
+      url: /kaztron/
       output: web, pdf
       type: homepage
 
