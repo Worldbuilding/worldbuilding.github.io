@@ -4,6 +4,10 @@ redirect_from: "/kaztron/"
 last_updated: 21 February 2018
 ---
 
+{% assign page_url_split = page.url | split: '/' %}
+{% capture data_name %}{{page_url_split[1]}}-{{page_url_split[2]}}{% endcapture %}
+{% assign data = site.data[data_name] %}
+
 KazTron is the /r/worldbuilding Discord server's resident helper bot! It mostly helps the moderators manage the community and run features like the World Spotlight, with a few automation features that happen behind the scenes, and a few commands of use to our members.
 
 This website documents the usage of the various commands, organised by module. Note that not all modules may be loaded, depending on needs as judged by the moderation team.
@@ -53,7 +57,7 @@ For example, `.help spotlight` will give you general information on the spotligh
 KazTron is developed and operated by:
 
 <div class="row">
-    {% for author in site.data.kaztron.authors.authors %}
+    {% for author in data.authors.authors %}
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default nav-panel text-center">
             <div class="panel-heading">
@@ -83,7 +87,7 @@ KazTron is developed and operated by:
 
 ### Contributors
 
-{% for contributor in site.data.kaztron.authors.contributors %}
+{% for contributor in data.authors.contributors %}
 * **{{ contributor.name }}** {% for link in contributor.links %}<a class="icon-link" href="{{link.url}}" target="_blank" title="{{link.title}}"><i class="{{link.icon}}"></i></a>{% endfor %}: {{contributor.role}}
 {% endfor %}
 

@@ -19,6 +19,12 @@ contributors:
 - name: Teeteegone
   role: "KazTron \"cat\" icon artwork"
   links: []
+- name: Grine_
+  role: "Quality assurance, guinea pig"
+  links:
+    - title: GitHub
+      icon: "fab fa-github"
+      url: https://github.com/Grine-sudoscience
 
 # Just an example of adding a link to contributors, for later
 # - name: ContributorMan
