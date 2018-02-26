@@ -1,3 +1,9 @@
+---
+title: "Troubleshooting KazTron"
+summary: "A guide to troubleshooting and reporting bugs/problems."
+last_updated: 26 February 2018
+---
+
 ## Bugs
 
 If you think you've discovered a bug in KazTron:

@@ -3,35 +3,47 @@
 home_sections:
 - heading: "Projects"
   items:
-  - title: KazTron
+  - title: KazTron Manual
     description: Our resident Discord helper bot! Consult the manual here.
     image: kaztron.png
-    url: /kaztron
-    button: "Docs"
+    buttons:
+      - title: Latest
+        url: /kaztron
+      - title: Dev
+        url: /kaztron/dev
+        category: default
+      - title: Versions
+        url: /kaztron/versions.html
+        category: default
   - title: Spotlight
     description: Apply to feature your world on the Discord server!
     icon: "fas fa-star"
-    url: /spotlight
-    button: "Read"
+    buttons:
+      - url: /spotlight
+        title: "Read"
   - title: Gridbox
     description: SI Data Portal
     icon: "fas fa-globe"
-    url: /gridbox
-    button: "Access"
+    buttons:
+      - url: /gridbox
+        title: "Access"
 
 
-- heading: "Links"
+- heading: "The /r/Worldbuilding Network"
   items:
   - title: /r/worldbuilding
     description: Home sweet home!
     icon: "fab fa-reddit-alien"
-    external_url: http://reddit.com/r/worldbuilding
+    buttons:
+      - external_url: http://reddit.com/r/worldbuilding
   - title: Find us on Discord!
     description: Chat with a vibrant community!
     icon: "fab fa-discord"
-    button: "Join "
-    external_url: http://discord.gg/worldbuilding
+    buttons:
+      - title: "Join "
+        external_url: http://discord.gg/worldbuilding
   - title: GitHub
     description: See the code behind the hood!
     icon: "fab fa-github"
-    external_url: http://github.com/worldbuilding
+    buttons:
+      - external_url: http://github.com/worldbuilding

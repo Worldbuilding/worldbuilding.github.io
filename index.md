@@ -24,11 +24,13 @@ toc: false
             <div class="panel-body">
                 <h4 class="no-toc no-anchor">{{ item.title }}</h4>
                 <p>{{ item.description }}</p>
-                {% if item.external_url %}
-                <a href="{{ item.external_url }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
-                {% else %}
-                <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-primary">{{ item.button | default: "Visit " }}</a>
-                {% endif %}
+                {% for button in item.buttons %}
+                    {% if button.external_url %}
+                    <a href="{{ button.external_url }}" class="btn btn-{{ button.category | default: "primary" }}">{{ button.title | default: "Visit" | append: " " }}</a>
+                    {% else %}
+                    <a href="{{ button.url | prepend: site.baseurl }}" class="btn btn-{{ button.category | default: "primary" }}">{{ button.title | default: "Visit" }}</a>
+                    {% endif %}
+                {% endfor %}
             </div>
          </div>
     </div>
