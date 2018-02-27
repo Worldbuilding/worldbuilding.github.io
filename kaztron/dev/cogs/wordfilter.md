@@ -83,8 +83,6 @@ Add a new filter word/expression.
 
 ## 3.3 rem (shorthand: r)
 
-{% include note.html content="In v2.0b2 (a.k.a. v1.3b2) and earlier, the `rem` command (aliases `r` and `remove`) functioned as described in the [rnum](#34-rnum) section." %}
-
 Remove a filter word/expression by word.
 
 **Usage**:
@@ -106,8 +104,6 @@ Remove a filter word/expression by word.
 
 
 ## 3.4 rnum
-
-{% include note.html content="Renamed from `rem` in v2.0b3 (a.k.a. v1.3b3)." %}
 
 Remove a filter word/expression by list index.
 

@@ -154,7 +154,7 @@ You can either use the currently selected spotlight, or specify an index number 
 * `.spotlight q a <datespec> [list_index]`
 
 **Arguments:**
-* `<datespec>`: Required, string. A string identifying the date. This can be:
+* `<datespec>`: Required, string. A string identifying the date. If the datespec contains spaces, quotation marks are *required*. The datespec can be:
     * An exact date: 2017-12-25, "25 December 2017", "December 25, 2017" (with quotation marks)
     * A time expression: "tomorrow", "next week", "in 5 days". Does **not** accept days of the week ("next Tuesday").
 * `[list_index]`: Optional, int. The numerical index of a spotlight application, as shown with `.spotlight list` ([1.3](#13-list-shorthand-l)). If this is not provided, the currently selected application will be used (so you don't have to specify this argument if you're using `.spotlight roll`, `.spotlight select` or `.spotlight queue next`, for example).
@@ -198,7 +198,22 @@ Change the scheduled date of a spotlight application in the queue.
 * `.spotlight queue edit 3 2017-12-31` - Changes the date of the 3rd queued application to 31 December 2017.
 
 
-#### 1.8.3 rem (shorthand: r)
+#### 1.8.3 next (shorthand: n)
+
+Set the next spotlight in the queue as the currently selected spotlight, and remove it from the queue. This is useful when a new spotlight is ready to start, as you can then immediately use `.spotlight showcase` ([1.7](#17-showcase)) to announce it publicly.
+
+**Usage:**
+* `.spotlight queue next`
+* `.spotlight q n`
+
+**Arguments:** None
+
+**Channels:** Any
+
+**Usable by:** Moderators only
+
+
+#### 1.8.4 rem (shorthand: r)
 
 Remove a spotlight application from the queue.
 
@@ -220,18 +235,3 @@ If no queue index is passed, removes the last item in the queue.
 **Examples:**
 * `.spotlight queue rem` - Remove the last spotlight in the queue.
 * `.spotlight queue rem 3` - Remove the third spotlight in the queue.
-
-
-### 1.9 next (shorthand: n)
-
-Set the next spotlight in the queue as the currently selected spotlight, and remove it from the queue. This is useful when a new spotlight is ready to start, as you can then immediately use `.spotlight showcase` ([1.7](#17-showcase)) to announce it publicly.
-
-**Usage:**
-* `.spotlight queue next`
-* `.spotlight q n`
-
-**Arguments:** None
-
-**Channels:** Any
-
-**Usable by:** Moderators only
