@@ -34,27 +34,32 @@ Access moderation records by user.
 
 Add a new note.
 
-If the `<user>` is not already known in the database, an entry will be created, using their current nickname as the canonical name. There is no need to create the user in advance.
-
 **Usage:**
 * `.notes add <user> <type> [OPTIONS] <note_contents>`
 * `.notes a <user> <type> [OPTIONS] <note_contents>`
 
 **Arguments:**
-* `<user>`: Required. The user to whom the note applies. See [Section 1](#1-notes).
+* `<user>`: Required. The user to whom the note applies. See `.help notes`.
 * `<type>`: Required. The type of record. One of:
-  * `note`: Generic note not falling under other categories.
-  * `good`: Noteworthy positive contributions to the community.
-  * `watch`: Moderation problems to watch out for.
-  * `int`: Moderator intervention events.
-  * `warn`: Formal warning issued.
-  * `temp`: Temporary ban issued.
-  * `perma`: Permanent ban issued.
-  * `appeal`: Formal appeal received.
+    * `note`: Miscellaneous note.
+    * `good`: Noteworthy positive contributions
+    * `watch`: Moderative problems to monitor
+    * `int`: Moderator intervention
+    * `warn`: Formal warning
+    * `temp`: Temporary ban
+    * `perma`: Permanent ban
+    * `appeal`: Formal appeal or decision
 * `[OPTIONS]`: Optional. Options of the form:
-  * `timestamp="timespec"`: Sets the note's time (e.g. the time at which a note happened). Default is "now". Instead of `timestamp`, you can also use the synonyms `starts`, `start` or `time`.
-  * `expires="timespec"`: Sets when a note expires. This is purely documentation: for example, to take note of when a temp ban ends, or a permaban appeal is available, etc. Default is no expiration. Instead of `expires`, you can also use the synonyms `expire`, `ends` or `end`.
-  * The timespec is "smart". You can type a date and time (like "3 Dec 2017 5PM"), or relative times in natural language ("10 minutes ago", "in 2 days", "now"). Just make sure not to forget quotation marks.
+    * `timestamp="timespec"`: Sets the note's time (e.g. the time of an event).
+      Default is "now". Instead of `timestamp`, you can also use the synonyms `starts`,
+      `start`, `time`.
+    * `expires="timespec"`: Sets when a note expires. This is purely documentation. For
+      example, when a temp ban ends, or a permaban appeal is available, etc.
+      Default is no expiration. Instead of `expires`, you can also use the synonyms
+      `expire`, `ends` or `end`.
+    * The timespec is "smart". You can type a date and time (like "3 Dec 2017 5PM"), or
+      relative times in natural language ("10 minutes ago", "in 2 days", "now"). Just make
+      sure not to forget quotation marks. No days of the week.
 * `<note_contents>`: The remainder of the command message is stored as the note text.
 
 **Channels:** Mod and bot channels
