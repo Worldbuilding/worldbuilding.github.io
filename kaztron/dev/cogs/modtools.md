@@ -4,7 +4,7 @@ last_updated: 21 February 2018
 summary: "The ModTools cog provides miscellaneous tools for moderators."
 ---
 
-# 1. up
+## 1. up
 
 Colours a moderator's username.
 
@@ -18,7 +18,8 @@ This command colours the moderator's username by applying a special role to it. 
 
 **Usable by:** Moderators only
 
-# 2. down
+
+## 2. down
 
 Uncolours a moderator's username.
 
@@ -32,9 +33,12 @@ This command undoes the `.up` command.
 
 **Usable by:** Moderators only
 
-# 3. whois
+
+## 3. whois
 
 Finds a Discord user from their ID, name, or name with discriminator.
+
+This command will not search for users based on a partial name, only find exact matches.
 
 {% include warning.html content="If the user is in the channel where you use this command, the user will receive a notification." %}
 
@@ -43,16 +47,17 @@ Finds a Discord user from their ID, name, or name with discriminator.
 **Arguments:**
 * `user`: An ID number, name, name with discriminator, etc. of a user to find.
 
-**Channels:** Mod and bot channels only
+**Channels:** Any
 
 **Usable by:** Moderators only
 
 **Example:**
 * `.whois 1234567890` will find user 1234567890.
 * `.whois JaneDoe#0921` will find a user called JaneDoe with discriminator #0921.
-* `.whois JaneDoe` will find a user called JaneDoe. If multiple users match, only the best (?) match will be returned.
+* `.whois JaneDoe` will find a user called JaneDoe. 
 
-# 4. wb
+
+## 4. wb
 
 Shows a "Please talk about worldbuilding" image.
         
