@@ -34,21 +34,23 @@ This command undoes the `.up` command.
 
 # 3. whois
 
-Finds a Discord user from their ID.
+Finds a Discord user from their ID, name, or name with discriminator.
 
-{% include warning.html content="This will send the user a notification. You should probably only use this in mod-restricted channels like #mods or #bot-test to avoid disturbing users unnecessarily." %}
+{% include warning.html content="If the user is in the channel where you use this command, the user will receive a notification." %}
 
-**Usage:** `.whois <user_id>`
+**Usage:** `.whois <user>`
 
 **Arguments:**
-* `user_id`: The ID number of the user.
+* `user`: An ID number, name, name with discriminator, etc. of a user to find.
 
 **Channels:** Mod and bot channels only
 
 **Usable by:** Moderators only
 
 **Example:**
-* `.finduser 1234567890` will find user 1234567890.
+* `.whois 1234567890` will find user 1234567890.
+* `.whois JaneDoe#0921` will find a user called JaneDoe with discriminator #0921.
+* `.whois JaneDoe` will find a user called JaneDoe. If multiple users match, only the best (?) match will be returned.
 
 # 4. wb
 
