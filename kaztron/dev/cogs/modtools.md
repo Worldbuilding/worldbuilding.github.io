@@ -34,7 +34,31 @@ This command undoes the `.up` command.
 **Usable by:** Moderators only
 
 
-## 3. whois
+## 3. tempban
+
+Tempban a user.
+
+This method will automatically create a modnote. It will not communicate with the user.
+
+This module integrates with modnotes, and will automatically enforce "temp" notes, giving a role to users with unexpired "temp" notes and removing that role when the note expires. This command is shorthand for `.notes add <user> temp expires="[expires]" [Reason]`.
+
+**Usage:** `.tempban <user> [expires=datespec] [reason]`
+
+**Arguments:**
+* `<user>`: The user to ban. See [modnotes: .notes](modnotes.html#1-notes) for more information.
+* `[expires=datespec]`: Optional. The datespec for the tempban's expiration. Use quotation marks if the datespec has spaces in it. See [modnotes: .notes add](modnotes.html#11-add) for more information on accepted syntaxes. Default is `expires="in 7 days"`.
+* `[reason]`: Optional, but highly recommended to specify. The reason to record in the modnote
+
+**Channels:** Mod and bot channels
+
+**Usable by:** Moderators only
+
+**Examples:**
+* `.tempban @BlitheringIdiot#1234 Was being a blithering idiot.` - Issues a 7-day ban.
+* `.tempban @BlitheringIdiot#1234 expires="in 3 days" Was being a slight blithering idiot only.` - Issues a 3-day ban.
+
+
+## 4. whois
 
 Finds a Discord user from their ID, name, or name with discriminator.
 
@@ -57,7 +81,7 @@ This command will not search for users based on a partial name, only find exact 
 * `.whois JaneDoe` will find a user called JaneDoe. 
 
 
-## 4. wb
+## 5. wb
 
 Shows a "Please talk about worldbuilding" image.
         

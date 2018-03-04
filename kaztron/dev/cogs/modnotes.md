@@ -34,6 +34,8 @@ Access moderation records by user.
 
 Add a new note.
 
+If the [modtools](modtools.html) module is active, `temp` notes will also be enforced by the bot (by applying the configured tempban role). An expiration time is highly recommended.
+
 **Usage:**
 * `.notes add <user> <type> [OPTIONS] <note_contents>`
 * `.notes a <user> <type> [OPTIONS] <note_contents>`
@@ -95,7 +97,31 @@ To prevent accidental data deletion, the removed note can be viewed and restored
 * `.notes r 124` - Removes note ID 124. Uses the `r` shorthand command.
 
 
-### 1.3. removed
+### 1.3. watches
+
+[MOD ONLY] Show all watches currently in effect (i.e. non-expired watch, int, warn records).
+
+Arguments:
+* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+
+**Channels:** Mod and bot channels
+
+**Usable by:** Moderators only
+
+
+### 1.4. temps
+
+Show all tempbans currently in effect (i.e. non-expired temp records).
+
+Arguments:
+* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+
+**Channels:** Mod and bot channels
+
+**Usable by:** Moderators only
+
+
+### 1.5. removed
 
 Show all removed notes, optionally filtered by a user.
 
@@ -104,14 +130,14 @@ Show all removed notes, optionally filtered by a user.
 
 **Arguments:**
 * `<user>`: Required. The user to filter by, or `all`. See [Section 1](#1-notes).
-* * page: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+* `[page]`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
 
 **Channels:** Admin channels
 
 **Usable by:** Administrators only
 
 
-### 1.3. restore
+### 1.6. restore
 
 Restore a removed note.
 
@@ -126,7 +152,7 @@ Restore a removed note.
 **Usable by:** Administrators only
 
 
-### 1.4. purge
+### 1.7. purge
 
 Permanently destroy a removed note.
 
@@ -141,7 +167,7 @@ Permanently destroy a removed note.
 **Usable by:** Administrators only
 
 
-### 1.5. finduser
+### 1.8. finduser
 
 User search.
 
@@ -162,9 +188,9 @@ This command searches the name and aliases fields. 20 results are shown per page
 * `.notes finduser Indium` - This command could, for example, match a user called "IndiumPhosphide".
 
 
-### 1.6. name
+### 1.9. name
 
-Set the canonical name by which a user is known. This replaces the previous name; to add aliases, see [Section 1.4](#14-alias).
+Set the canonical name by which a user is known. This replaces the previous name; to add aliases, see [Section 1.10](#110alias).
 
 **Usage:**
 * `.notes name <user> <new_name>`
@@ -181,7 +207,7 @@ Set the canonical name by which a user is known. This replaces the previous name
 * `.notes name @FireAlchemist#1234 Roy Mustang`
 
 
-### 1.7. alias
+### 1.10. alias
 
 Set or remove alternative names a user is known under.
 
@@ -203,7 +229,7 @@ Set or remove alternative names a user is known under.
 * `.notes alias add @FireAlchemist#1234 The Flame Alchemist`
 
 
-### 1.8. group
+### 1.11. group
 
 Group and ungroup users together.
 
@@ -212,13 +238,13 @@ individual. The `.notes` command will show the user info and records for both si
 if one of them is looked up. The users remain separate and can be removed from the group
 later.
 
-#### 1.8.1. group add (shorthand: group a)
+#### 1.11.1. group add (shorthand: group a)
 
 Group users together.
         
 If one user is not in a group, that user is added to the other user's group. If both users are in separate groups, both groups are merged. This is irreversible.
 
-See [1.8 group](#18-group) for more information on grouping.
+See [1.11 group](#111-group) for more information on grouping.
 
 {% include warning.html content="Be careful about grouping users already in separate groups! This will **irreversibly** merge both groups." %}
 
@@ -236,11 +262,11 @@ See [1.8 group](#18-group) for more information on grouping.
 * `.notes group add @FireAlchemist#1234 @TinyMiniskirtEnthusiast#4444`
 
 
-#### 1.8.2. group rem (shorthand: group r; alias: group remove)
+#### 1.11.2. group rem (shorthand: group r; alias: group remove)
 
 Remove a user from the group.
 
-See [1.8 group](#18-group) for more information on grouping.
+See [1.11 group](#111-group) for more information on grouping.
 
 {% include tip.html content="This command takes only **one** user as argument, not two." %}
 
