@@ -1,6 +1,6 @@
 ---
 title: "Cogs: ModNotes"
-last_updated: 21 February 2018
+last_updated: 4 March 2018
 summary: "The ModNotes cog implements the storage of records for use by moderators in the course of their duty."
 ---
 
