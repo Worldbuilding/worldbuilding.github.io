@@ -129,7 +129,7 @@ You should normally only need to use this if you realise you can't stay for the 
 Report your wordcount at the end of the sprint.
 
 **Usage:**
-* `.w cordcount <wordcount>`
+* `.w wordcount <wordcount>`
 * `.w wc <wordcount>`
 * `.w c <wordcount>`
 
