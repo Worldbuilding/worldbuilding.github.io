@@ -49,7 +49,7 @@ plugins:
 # feedback_text: "Need help?"
 
 # if you uncomment this line, it changes where the feedback link points to
-feedback_link: "https://www.reddit.com/message/compose?to=%2Fr%2Fworldbuilding&subject=worldbuilding.github.io&message=I'm writing to you about /r/worldbuilding github website.%0D%0D<Type your comments here>"
+feedback_link: "https://www.reddit.com/message/compose?to=%2Fr%2Fworldbuilding&subject=worldbuilding.network&message=I'm writing to you about the /r/worldbuilding website.%0D%0D<Type your comments here>"
 
 # library used for syntax highlighting
 highlighter: rouge
@@ -140,5 +140,5 @@ description: >
   Resources for the /r/worldbuilding community - for now mostly in-house software resources.
 
 # needed for sitemap.xml file only
-url: http://worldbuilding.github.io
+url: http://worldbuilding.network
 baseurl: ""

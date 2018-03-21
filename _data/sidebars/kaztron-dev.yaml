@@ -44,6 +44,10 @@ entries:
       url: /kaztron/versions.html
       output: web, pdf
 
+    - title: Release Notes - v2.1a1
+      external_url: https://github.com/Worldbuilding/kaztron/releases/tag/v2.1a1
+      output: web, pdf
+
     - title: Release Notes - v2.0
       external_url: https://github.com/Worldbuilding/kaztron/releases/tag/v2.0
       output: web, pdf
@@ -68,6 +72,10 @@ entries:
       url: /kaztron/dev/cogs/spotlight.html
       output: web, pdf
 
+    - title: Quotes Database
+      url: /kaztron/dev/cogs/quotedb.html
+      output: web, pdf
+
     - title: Reminders
       url: /kaztron/dev/cogs/reminders.html
       output: web, pdf
@@ -76,7 +84,7 @@ entries:
       url: /kaztron/dev/cogs/welcome.html
       output: web, pdf
 
-    - title: Writing Sprints (v2.1 draft)
+    - title: Writing Sprints
       url: /kaztron/dev/cogs/sprint.html
       output: web, pdf
 
