@@ -1,15 +1,9 @@
 ---
 title: "Cogs: RoleManager"
 summary: "The RoleManager cog provides role management functionality for users. It is intended to allow users to join and leave specific roles on their own through bot commands, in order to participate or not participate in certain features (for example, to be able to get highlighted for special-interest news)."
-last_updated: 21 February 2018
+last_updated: 25 March 2018
 ---
 
-
-## Voice State Update
-
-This cog monitors users' voice channel state. When a user is in a configured voice channel (normally all the public channels), they will be given the `in_voice` role (configurable)—this is generally used to allow only users in voice access to a voice-specific text channel.
-
-Currently, this functionality supports any number of voice channels but only one role. This could be extended if needed—Mods, talk to DevOps.
 
 ## Role Management
 

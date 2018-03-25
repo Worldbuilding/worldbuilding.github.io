@@ -84,6 +84,10 @@ entries:
       url: /kaztron/dev/cogs/reminders.html
       output: web, pdf
 
+    - title: Voice Log
+      url: /kaztron/dev/cogs/voicelog.html
+      output: web, pdf
+
     - title: Welcome
       url: /kaztron/dev/cogs/welcome.html
       output: web, pdf
