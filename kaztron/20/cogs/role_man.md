@@ -52,8 +52,4 @@ This would allow users to join and leave the role with `.sprint follow` and `.sp
 
 It is also possible to do this in the `config.json` file. In this case, the commands will always appear in `.help` under RoleManager. Please see `config.example.json` for an example of the structure, and also refer to the docstring for `RoleManager.add_managed_role()` for most of the parameters.
 
-## Spotlight
-
-Spotlight audience role management is implemented in the [Spotlight cog][kaztroncogsspotlight]. It is not handled by RoleManager at this time.
-
 {% include links.html %}
