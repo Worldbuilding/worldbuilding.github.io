@@ -1,6 +1,6 @@
 ---
 title: "Cogs: ModNotes"
-last_updated: 4 March 2018
+last_updated: 25 March 2018
 summary: "The ModNotes cog implements the storage of records for use by moderators in the course of their duty."
 ---
 
@@ -75,7 +75,25 @@ If the [modtools](modtools.html) module is active, `temp` notes will also be enf
 * `.notes a @BlitheringIdiot#1234 temp Drive-by advertising` - Uses the `a` shorthand for this command.
 
 
-### 1.2. rem (shorthand: r; alias: remove)
+### 1.2. expires (shorthand: x; alias: expire)
+
+Change the expiration time of an existing note.
+
+**Usage:**
+* `.notes expires <note_id> [timespec]`
+* `.notes x <note_id> [timespec]`
+
+Arguments:
+* `<note_id>`: Required. The ID of the note. See `.help notes`.
+* `[timespec]`: Optional. The time at which the ban will expire. Default is now. Format
+accepted is the same as [.notes add](#11-add-shorthand-a) (quotation marks not required).
+
+Example:
+* `.notes expires 122 tomorrow` - Change the expiration time of note #122 to tomorrow (24 hours from now).
+* `.notes expires 138 2018-01-24` - Change the expiration time of note #138 to 24 January 2018.
+
+
+### 1.3. rem (shorthand: r; alias: remove)
 
 Remove an existing note.
 
@@ -86,7 +104,7 @@ To prevent accidental data deletion, the removed note can be viewed and restored
 * `.notes r <note_id>`
 
 **Arguments:**
-* `<note_id>`: Required. The ID of the note to remove. See [Section 1](#1-notes) for how to list notes and IDs.
+* `<note_id>`: Required. The ID of the note to remove. See [.notes](#1-notes) for how to list notes and IDs.
 
 **Channels:** Mod and bot channels
 
@@ -97,9 +115,9 @@ To prevent accidental data deletion, the removed note can be viewed and restored
 * `.notes r 124` - Removes note ID 124. Uses the `r` shorthand command.
 
 
-### 1.3. watches
+### 1.4. watches
 
-[MOD ONLY] Show all watches currently in effect (i.e. non-expired watch, int, warn records).
+Show all watches currently in effect (i.e. non-expired watch, int, warn records).
 
 Arguments:
 * `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
@@ -109,7 +127,7 @@ Arguments:
 **Usable by:** Moderators only
 
 
-### 1.4. temps
+### 1.5. temps
 
 Show all tempbans currently in effect (i.e. non-expired temp records).
 
@@ -121,7 +139,7 @@ Arguments:
 **Usable by:** Moderators only
 
 
-### 1.5. removed
+### 1.6. removed
 
 Show all removed notes, optionally filtered by a user.
 
@@ -129,7 +147,7 @@ Show all removed notes, optionally filtered by a user.
 * `.notes removed <user> [page]`
 
 **Arguments:**
-* `<user>`: Required. The user to filter by, or `all`. See [Section 1](#1-notes).
+* `<user>`: Required. The user to filter by, or `all`. See [.notes](#1-notes).
 * `[page]`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
 
 **Channels:** Admin channels
@@ -137,7 +155,7 @@ Show all removed notes, optionally filtered by a user.
 **Usable by:** Administrators only
 
 
-### 1.6. restore
+### 1.7. restore
 
 Restore a removed note.
 
@@ -152,7 +170,7 @@ Restore a removed note.
 **Usable by:** Administrators only
 
 
-### 1.7. purge
+### 1.8. purge
 
 Permanently destroy a removed note.
 
@@ -167,7 +185,7 @@ Permanently destroy a removed note.
 **Usable by:** Administrators only
 
 
-### 1.8. finduser
+### 1.9. finduser
 
 User search.
 
@@ -188,15 +206,15 @@ This command searches the name and aliases fields. 20 results are shown per page
 * `.notes finduser Indium` - This command could, for example, match a user called "IndiumPhosphide".
 
 
-### 1.9. name
+### 1.10. name
 
-Set the canonical name by which a user is known. This replaces the previous name; to add aliases, see [Section 1.10](#110alias).
+Set the canonical name by which a user is known. This replaces the previous name; to add aliases, see [.notes alias](#110alias).
 
 **Usage:**
 * `.notes name <user> <new_name>`
 
 **Arguments:**
-* `<user>`: Required. The user to whom the note applies. See [Section 1](#1-notes).
+* `<user>`: Required. The user to whom the note applies. See [.notes](#1-notes).
 * `<new_name>`: Required. The new canonical name to set for a user. Max 32 characters, no newlines.
 
 **Channels:** Mod and bot channels
@@ -207,7 +225,7 @@ Set the canonical name by which a user is known. This replaces the previous name
 * `.notes name @FireAlchemist#1234 Roy Mustang`
 
 
-### 1.10. alias
+### 1.11. alias
 
 Set or remove alternative names a user is known under.
 
@@ -218,7 +236,7 @@ Set or remove alternative names a user is known under.
 
 **Arguments:**
 * `<add|rem>`: Required. Whether to add or remove the indicated alias.
-* `<user>`: Required. The user to whom the note applies. See [Section 1](#1-notes).
+* `<user>`: Required. The user to whom the note applies. See [.notes](#1-notes).
 * `<alias>`: Required. The alias to set for the user. Max 32 characters, no newlines.
 
 **Channels:** Mod and bot channels
@@ -229,7 +247,7 @@ Set or remove alternative names a user is known under.
 * `.notes alias add @FireAlchemist#1234 The Flame Alchemist`
 
 
-### 1.11. group
+### 1.12. group
 
 Group and ungroup users together.
 
@@ -238,13 +256,13 @@ individual. The `.notes` command will show the user info and records for both si
 if one of them is looked up. The users remain separate and can be removed from the group
 later.
 
-#### 1.11.1. group add (shorthand: group a)
+#### 1.12.1. group add (shorthand: group a)
 
 Group users together.
         
 If one user is not in a group, that user is added to the other user's group. If both users are in separate groups, both groups are merged. This is irreversible.
 
-See [1.11 group](#111-group) for more information on grouping.
+See [.notes group](#112-group) for more information on grouping.
 
 {% include warning.html content="Be careful about grouping users already in separate groups! This will **irreversibly** merge both groups." %}
 
@@ -252,7 +270,7 @@ See [1.11 group](#111-group) for more information on grouping.
 * `.notes group add <user1> <user2>`
 
 **Arguments:**
-* `<user1>` and `<user2>`: Required. The two users to group together. See [Section 1](#1-notes).
+* `<user1>` and `<user2>`: Required. The two users to group together. See [.notes](#1-notes).
 
 **Channels:** Mod and bot channels
 
@@ -262,11 +280,11 @@ See [1.11 group](#111-group) for more information on grouping.
 * `.notes group add @FireAlchemist#1234 @TinyMiniskirtEnthusiast#4444`
 
 
-#### 1.11.2. group rem (shorthand: group r; alias: group remove)
+#### 1.12.2. group rem (shorthand: group r; alias: group remove)
 
 Remove a user from the group.
 
-See [1.11 group](#111-group) for more information on grouping.
+See [.notes group](#112-group) for more information on grouping.
 
 {% include tip.html content="This command takes only **one** user as argument, not two." %}
 
@@ -274,7 +292,7 @@ See [1.11 group](#111-group) for more information on grouping.
 * `.notes group rem <user>`
 
 **Arguments:**
-* `<user>`: Required. The user to unlink. See [Section 1](#1-notes).
+* `<user>`: Required. The user to unlink. See [.notes](#1-notes).
 
 **Channels:** Mod and bot channels
 
