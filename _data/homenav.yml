@@ -36,12 +36,14 @@ home_sections:
     icon: "fab fa-reddit-alien"
     buttons:
       - external_url: http://reddit.com/r/worldbuilding
-  - title: Find us on Discord!
-    description: Chat with a vibrant community!
+  - title: Come chat!
+    description: "Chat with a vibrant community!<br />(IRC details: #worldbuilding on irc.snoonet.org:6697)"
     icon: "fab fa-discord"
     buttons:
-      - title: "Join "
+      - title: "Discord"
         external_url: http://discord.gg/worldbuilding
+      - title: "KiwiIRC"
+        external_url: https://kiwiirc.com/client?settings=e464ff37409c37405da31b6291b1fbad
   - title: GitHub
     description: See the code behind the hood!
     icon: "fab fa-github"
