@@ -18,11 +18,15 @@ most active hours of the day, etc.
 
 Unique users are recorded on a month-by-month basis, using a cryptographic hash algorithm and a salt
 in order to ensure this data cannot be traced backwards to a specific user during the collection
-period. Furthermore, the salt is destroyed at the end of each month, and a new salt is randomly
-generated for the next month. This ensures that, after this point, users cannot practically be
-associated with a user hash (or vice-versa) with any current technology, and a particular user
-cannot be tracked (even anonymously) from month to month. The salt is never made available to
-moderators or users.
+period.
+
+At the end of each month, all user hashes are replaced with random tokens generated from a
+cryptographically strong pseudorandom algorithm, ensuring that no connection to the original user
+(even cryptographically obfuscated) can be made. Furthermore, the salt is regenerated for the next
+month's data collection, ensuring that a user cannot be tracked month-to-month even if data is
+accessed prior to the end of the month. The salt is never made available to moderators or users,
+and automatically destroyed once it is no longer needed.
+
 
 ## File format
 
@@ -71,7 +75,7 @@ A day starts at midnight UTC.
 Note that if the range crosses month boundaries (e.g. March to April), then the unique user
 hashes can be correlated between each other only within a given month. The same user will
 have different hashes in different months. This is used as an anonymisation method, to avoid
-long-term tracking of a unique, even if pseudonymised, user.
+long-term tracking of a unique user.
 
 This will generate and upload a CSV file, and could take some time. Please avoid calling
 this function multiple times for the same data or requesting giant ranges.
@@ -83,7 +87,7 @@ users know the drill.
 **Usage:** `.userstats [daterange]`
 
 **Arguments:**
-* `[daterange]`. Optional. This can be a single date (period of 24 hours), or a range of date/times in the
+* `[daterange]`. Optional. This can be a single date (period of 24 hours), or a range of dates in the
   form `date1 to date2`. Each date can be specified as ISO format (`2018-01-12`), in English
   with or without abbreviations (`12 Jan 2018`), or as relative dates (`5 days ago`). Default is last month.
 
@@ -125,7 +129,7 @@ users know the drill.
 * `<type>`: One of `full`, `weekday` or `hourly`. `weekday` and `hourly` take the raw data and
     provide a breakdown by day of the week or hour of the day, respectively.
 * `<channel>`: The name of a channel on the server, or `all`.
-* `[daterange]`. Optional. This can be a single date (period of 24 hours), or a range of date/times in the
+* `[daterange]`. Optional. This can be a single date (period of 24 hours), or a range of dates in the
   form `date1 to date2`. Each date can be specified as ISO format (`2018-01-12`), in English
   with or without abbreviations (`12 Jan 2018`), or as relative dates (`5 days ago`). Default is last month.
 

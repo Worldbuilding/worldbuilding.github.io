@@ -59,11 +59,11 @@ Find the most recent quote matching a user and/or text search.
 
 Retrieve a list of quotes. Reply is always PMed.
 
-**Usage:** `.quotes list
+**Usage:** `.quotes list <user> [page]`
 
 **Arguments:**
 * `<user>`: Required. The user to find a quote for. See [.quote](#quote) for valid formats.
-* `[page]`: Optional. The page number to access, if there are more than 1 pages of notes.
+* `[page]`: Optional. The page number to access, if there are more than 1 pages of notes. Default: last page.
 
 **Channels:** Any
 

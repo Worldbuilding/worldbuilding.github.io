@@ -1,6 +1,6 @@
 ---
 title: "Cogs: Spotlight"
-last_updated: 26 February 2018
+last_updated: 31 March 2018
 summary: "The Spotlight cog provides functionality which manages the World Spotlight community feature on the /r/worldbuilding Discord server."
 ---
 
@@ -143,19 +143,41 @@ The queue is always ordered chronologically. If two queue items have the exact s
 **Usable by:** Moderators only
 
 
-#### 1.8.2 add (shorthand: a)
+#### 1.8.2 showcase (shorthand: s)
 
-Add a spotlight application scheduled for a given date.
+Lists a month's queue in the showcase format.
 
-You can either use the currently selected spotlight, or specify an index number for the spotlight application to add.
+Usage:
+* `.spotlight queue showcase [month]`
+* `.spotlight q s [month]`
+
+**Arguments:**
+* `[month]`: Optional. Specify the month to list applications for. Default: next month.
+
+**Channels:** Any
+
+**Usable by:** Moderators only
+
+**Examples:**
+* `.spotlight q s 2018-03`
+* `.spotlight q s March 2018`
+
+
+#### 1.8.3 add (shorthand: a)
+
+Add a spotlight application scheduled for a given range.
+     
+The currently selected spotlight will be added. Use `.spotlight select` or `.spotlight roll`
+to change the currently selected spotlight.
 
 **Usage:**
 * `.spotlight queue add <datespec> [list_index]`
 * `.spotlight q a <datespec> [list_index]`
 
 **Arguments:**
-* `<datespec>`: Required, string. A string identifying the date. If the datespec contains spaces, quotation marks are *required*. The datespec can be:
-    * An exact date: 2017-12-25, "25 December 2017", "December 25, 2017" (with quotation marks)
+* `<daterange>`: Required, string. A string in the form "date1 to date2". Each date can be in one of these formats:
+    * An exact date: "2017-12-25", "25 December 2017", "December 25, 2017"
+    * A partial date: "April 23"
     * A time expression: "tomorrow", "next week", "in 5 days". Does **not** accept days of the week ("next Tuesday").
 * `[list_index]`: Optional, int. The numerical index of a spotlight application, as shown with `.spotlight list` ([1.3](#13-list-shorthand-l)). If this is not provided, the currently selected application will be used (so you don't have to specify this argument if you're using `.spotlight roll`, `.spotlight select` or `.spotlight queue next`, for example).
 
@@ -168,11 +190,11 @@ You can either use the currently selected spotlight, or specify an index number 
 **Usable by:** Moderators only
 
 **Examples:**
-* `.spotlight queue add 2017-12-25` - Adds the currently selected application, scheduled on 25 December 2017.
-* `.spotlight queue add "in 3 days" 13` - Adds application #13, scheduled
+* `.spotlight queue add 2018-01-25 to 2018-01-26`
+* `.spotlight queue add april 3 to april 5`
 
 
-#### 1.8.2 edit (shorthand: e)
+#### 1.8.4 edit (shorthand: e)
 
 Change the scheduled date of a spotlight application in the queue.
 
@@ -183,10 +205,17 @@ Change the scheduled date of a spotlight application in the queue.
 * `.spotlight q e <queue_index> <datespec>`
 
 **Arguments:**
-* `<datespec>`: Required, string. A string identifying the date. This can be:
-    * An exact date: 2017-12-25, "25 December 2017", "December 25, 2017" (with quotation marks)
-    * A time expression: "tomorrow", "next week", "in 5 days". Does **not** accept days of the week ("next Tuesday").
-* `[queue_index]`: Optional, int. The numerical position in the queue, as shown with `.spotlight queue list` ([1.8.1](#181-list-shorthand-l)).
+* `<queue_index>`: Required, int. The numerical position in the queue, as shown with
+  `.spotlight queue list` ([1.8.1](#181-list-shorthand-l)).
+* `<daterange>`: Required, string. A string in the form "date1 to date2". Each date can be
+  in one of these formats:
+    * An exact date: "2017-12-25", "25 December 2017", "December 25, 2017"
+    * A partial date: "April 23"
+    * A time expression: "tomorrow", "next week", "in 5 days". Does **not** accept days of
+      the week ("next Tuesday").
+
+Examples:
+    `.spotlight queue edit 3 april 3 to april 6`
 
 {% include note.html content="KazTron will not take any action on the scheduled date. It is purely informational, intended for the bot operator, as well as determining the order of the queue." %}
 
@@ -198,7 +227,7 @@ Change the scheduled date of a spotlight application in the queue.
 * `.spotlight queue edit 3 2017-12-31` - Changes the date of the 3rd queued application to 31 December 2017.
 
 
-#### 1.8.3 next (shorthand: n)
+#### 1.8.5 next (shorthand: n)
 
 Set the next spotlight in the queue as the currently selected spotlight, and remove it from the queue. This is useful when a new spotlight is ready to start, as you can then immediately use `.spotlight showcase` ([1.7](#17-showcase)) to announce it publicly.
 
@@ -213,7 +242,7 @@ Set the next spotlight in the queue as the currently selected spotlight, and rem
 **Usable by:** Moderators only
 
 
-#### 1.8.4 rem (shorthand: r)
+#### 1.8.6 rem (shorthand: r)
 
 Remove a spotlight application from the queue.
 

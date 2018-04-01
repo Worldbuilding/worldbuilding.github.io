@@ -1,6 +1,6 @@
 ---
 title: "Cogs: ModNotes"
-last_updated: 25 March 2018
+last_updated: 31 March 2018
 summary: "The ModNotes cog implements the storage of records for use by moderators in the course of their duty."
 ---
 
@@ -19,7 +19,7 @@ Access moderation records by user.
 
 **Arguments:**
 * `<user>`: Required. The user for whom to find moderation notes. This can be an `@mention`, a Discord ID (numerical only), or a KazTron ID (starts with `*`).
-* `[page]`: Optional. The page number to access, if there are more than 1 pages of notes. Default: 1.
+* `[page]`: Optional. The page number to access, if there are more than 1 pages of notes. Default: last page.
 
 **Channels:** Mod and bot channels
 
@@ -120,7 +120,7 @@ To prevent accidental data deletion, the removed note can be viewed and restored
 Show all watches currently in effect (i.e. non-expired watch, int, warn records).
 
 Arguments:
-* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: last page.
 
 **Channels:** Mod and bot channels
 
@@ -132,7 +132,7 @@ Arguments:
 Show all tempbans currently in effect (i.e. non-expired temp records).
 
 Arguments:
-* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+* `page`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: last page.
 
 **Channels:** Mod and bot channels
 
@@ -148,7 +148,7 @@ Show all removed notes, optionally filtered by a user.
 
 **Arguments:**
 * `<user>`: Required. The user to filter by, or `all`. See [.notes](#1-notes).
-* `[page]`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: 1.
+* `[page]`: Optional[int]. The page number to access, if there are more than 1 pages of notes. Default: last page.
 
 **Channels:** Admin channels
 
