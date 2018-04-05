@@ -173,24 +173,56 @@ Stop getting notifications about sprints, unless you've already joined that spri
 
 Show the leaderboards.
 
-**Usage:** `.w leader`
+**Usage:** `.w leader [date]`
 
 **Arguments:**
-* None
+* `[date]`: Optional. Various date formats are accepted like `2018-03-14`, `14 Mar 2018`, `yesterday`. If not given, shows leaderboard for all time; if specified, shows leaderboard for the week that includes the given date.
 
 **Channels:** #writing only
 
 **Usable by:** Everyone
+
+**Examples:**
+* `.w leader` - All-time leaderboard.
+* `.w leader 2018-03-14` - Leaderboard for the week that contains 14 March 2018.
 
 ### 1.10. stats
 
 Show stats, either global or per-user.
 
-**Usage:** `.w stats [@user_mention]`
+**Usage:** `.w stats <user> [date]`
 
 **Arguments:**
-* `[@user_mention]`: Optional. An @mention of the user to look up. If not specified, shows global stats.
+* `<user>`: An @mention of the user to look up, or "all" for global stats.
+* `[date]`: Optional. Various date formats are accepted like `2018-03-14`, `14 Mar 2018`, `yesterday`. If not given, shows stats for all time; if specified, shows stats for the week that includes the given date.
 
 **Channels:** #writing only
 
 **Usable by:** Everyone
+
+**Examples:**
+* `.w stats all` - Global stats for all time.
+* `.w stats @JaneDoe` - Stats for JaneDoe for all time.
+* `.w stats all 2018-03-14` - Global stats for the week including 14 March.
+
+### 1.11. statreset
+
+Reset your own stats (or any user's stats, for mods).
+
+{% include warning.html content="This command cannot be undone!" %}
+
+{% include tip.html content="Resetting one user's stats will not affect global stats." %}
+
+**Usage:** `.w statreset [user]`
+
+**Arguments:**
+* `[user]`: Optional, for mods only. Reset another user's stats. Can be an @mention of another user, "global" or "all".
+
+**Channels:** #writing only
+
+**Usable by:** Everyone (some options are mod-only)
+
+**Examples:**
+* `.w statreset` - Reset your own stats.
+* `.w statreset @JaneDoe` - Reset Jane Doe's stats (mods only).
+* `.w statsreset global` - Reset global stats only (user stats are preserved).
