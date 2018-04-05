@@ -1,6 +1,6 @@
 ---
 title: "Cogs: Sprint"
-last_updated: 21 February 2018
+last_updated: 5 April 2018
 summary: "The Sprint cog allows users to hold writing sprint events, in which several users get together to work on a writing project for a fixed amount of time and compete on productivity."
 ---
 

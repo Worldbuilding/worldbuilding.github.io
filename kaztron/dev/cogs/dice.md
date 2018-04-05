@@ -8,7 +8,7 @@ last_updated: 21 February 2018
 
 Rolls dice.
 
-Rolls a <sides>-sided die <num> times, and reports the rolls and total.
+Rolls a `<sides>`-sided die `<num>` times, and reports the rolls and total.
 
 **Usage:** `.roll <num>d<sides>`
 
@@ -36,3 +36,20 @@ Rolls four dice for the FATE tabletop roleplaying game system.
 **Channels:** #tabletop, #bot-test
 
 **Usable By:** Anyone
+
+
+## 3. choose
+
+Need some help making a decision? Let the bot choose for you!
+
+**Usage:** `.choose <choices>`
+
+**Arguments:**
+* `<choices>` - Two or more choices, separated by commas `,`.
+
+**Channels:** Any
+
+**Usable By:** Anyone
+
+**Examples:**
+* `.choose a, b, c`
