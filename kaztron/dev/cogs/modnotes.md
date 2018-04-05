@@ -1,10 +1,8 @@
 ---
 title: "Cogs: ModNotes"
-last_updated: 31 March 2018
+last_updated: 5 April 2018
 summary: "The ModNotes cog implements the storage of records for use by moderators in the course of their duty."
 ---
-
-{% include important.html content="This document is a draft specification for features on the v2.0 roadmap. It is a living document and subject to change." %}
 
 The **ModNotes** cog implements the storage of records for use by moderators in the course of their duty, and as a tool of communication between moderators. It allows arbitrary text records to be recorded, alongside with the author and timestamp, associated to various community users.
 

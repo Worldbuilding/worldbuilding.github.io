@@ -4,8 +4,6 @@ last_updated: 21 March 2018
 summary: "The Quotes Database helps you capture the best moments on the server!"
 ---
 
-{% include important.html content="This document is a draft specification for features on the v2.1 roadmap. It may not be implemented or production-ready and is subject to change." %}
-
 The Quotes Database helps you capture the best moments on the server! Store your fellow members' funniest moments so that you can revisit them time and time again.
 
 

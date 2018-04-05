@@ -4,8 +4,6 @@ last_updated: 5 April 2018
 summary: "The Sprint cog allows users to hold writing sprint events, in which several users get together to work on a writing project for a fixed amount of time and compete on productivity."
 ---
 
-{% include important.html content="This document is a draft specification for features on the v2.1 roadmap. It may not be implemented or production-ready and is subject to change." %}
-
 Welcome to writing sprints, where everything's made up and the words don't matter!
 
 In writing sprints (a.k.a. word wars), you get together with a group of other server members
