@@ -44,6 +44,10 @@ entries:
       url: /kaztron/versions.html
       output: web, pdf
 
+    - title: Release Notes - v2.1b2
+      external_url: https://github.com/Worldbuilding/kaztron/releases/tag/v2.1b2
+      output: web, pdf
+
     - title: Release Notes - v2.1b1
       external_url: https://github.com/Worldbuilding/kaztron/releases/tag/v2.1b1
       output: web, pdf
