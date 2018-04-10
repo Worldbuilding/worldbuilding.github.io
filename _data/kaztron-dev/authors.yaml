@@ -25,6 +25,12 @@ contributors:
     - title: GitHub
       icon: "fab fa-github"
       url: https://github.com/Grine-sudoscience
+- name: Kauyon Kais
+  role: Development
+  links:
+    - title: GitHub
+      icon: "fab fa-github"
+      url: https://github.com/KauyonKais
 
 # Just an example of adding a link to contributors, for later
 # - name: ContributorMan
