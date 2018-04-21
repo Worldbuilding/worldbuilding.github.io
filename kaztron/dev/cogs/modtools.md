@@ -62,7 +62,7 @@ This module integrates with modnotes, and will automatically enforce "temp" note
 
 Finds a Discord user from their ID, name, or name with discriminator.
 
-This command will not search for users based on a partial name, only find exact matches.
+If an exact match isn't found, then this tool will do a substring search on all visible users' names and nicknames.
 
 {% include warning.html content="If the user is in the channel where you use this command, the user will receive a notification." %}
 
