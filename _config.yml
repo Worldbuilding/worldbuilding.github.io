@@ -80,26 +80,6 @@ defaults:
       topnav: topnav
   -
     scope:
-      path: "kaztron/20"
-      type: "pages"
-    values:
-      layout: "page"
-      comments: false
-      search: true
-      sidebar: kaztron-20
-      topnav: topnav
-  -
-    scope:
-      path: "kaztron/dev"
-      type: "pages"
-    values:
-      layout: "page"
-      comments: false
-      search: true
-      sidebar: kaztron-dev
-      topnav: topnav
-  -
-    scope:
       path: "spotlight"
       type: "pages"
     values:
@@ -132,7 +112,7 @@ defaults:
 
 sidebars:
 - home
-- kaztron
+- spotlight
 - other
 
 # the description is used in the feed.xml file
