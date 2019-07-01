@@ -1,5 +1,19 @@
 ---
-title: "Access denied"
+title: "Gridbox Public Portal"
+last_updated: 1 July 2019
+summary: "Gridbox public access portal. Your access level: CITIZEN."
 ---
 
-**Access denied. This incident will be reported.**
+<h2>Data digests</h2>
+
+Nothing here.
+
+<h2>Full data analyses (no interpretation)</h2>
+
+<div class="btn-group btn-group-lg" role="group">
+    <div class="btn btn-info disabled">2019</div>
+    <div class="btn btn-primary disabled">Jan&ndash;Apr</div>
+    <a href="/gridbox/userstats-2019-jan.html" class="btn btn-primary">[1]</a>
+    <a href="/gridbox/userstats-2019-jan-top80.html" class="btn btn-primary"><abbr title="Channel breakdown of top users by total messages">[2]</abbr></a>
+    <a href="/gridbox/userstats-2019-may.html" class="btn btn-primary">May&ndash;June</a>
+</div>
