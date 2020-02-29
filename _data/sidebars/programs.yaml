@@ -2,22 +2,26 @@
 
 entries:
 - title: sidebar
-  product: World Spotlight
+  product: Community Programs
   head_icon: "fas fa-star"
   folders:
 
-  - title: Spotlight
+  - title: Community Programs
     output: web, pdf
     folderitems:
     - title: General Information
       type: homepage
-      url: /spotlight/
+      url: /programs/
+      output: web, pdf
+
+    - title: Suggest an Enthusiast Topic!
+      external_url: https://forms.gle/n8KfwfK7V9tmDzhW7
       output: web, pdf
 
     - title: Apply to host a Spotlight!
-      external_url: https://docs.google.com/forms/d/e/1FAIpQLSdiLqMST5ORPDyAGLaCvuhn6_42R8h6bShnbk0WZ9itfukMCg/viewform
+      external_url: https://goo.gl/forms/uap6PmwzeyheZMJk2
       output: web, pdf
 
     - title: Guide to a Successful Spotlight
-      url: /spotlight/guide.html
+      url: /programs/spotlight-guide.html
       output: web, pdf

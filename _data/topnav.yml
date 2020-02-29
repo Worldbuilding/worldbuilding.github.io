@@ -16,8 +16,8 @@ topnav_dropdowns:
       folderitems:
         - title: KazTron
           url: /kaztron
-        - title: Spotlight
-          url: /spotlight
+        - title: Community Programs
+          url: /programs
         - title: Gridbox
           url: /gridbox
     - title: The Network

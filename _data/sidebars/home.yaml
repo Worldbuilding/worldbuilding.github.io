@@ -21,8 +21,8 @@ entries:
       url: /kaztron
       output: web, pdf
 
-    - title: Spotlight
-      url: /spotlight
+    - title: Community Programs
+      url: /programs
       output: web, pdf
 
     - title: Gridbox

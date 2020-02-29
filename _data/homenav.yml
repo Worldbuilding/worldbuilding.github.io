@@ -15,11 +15,11 @@ home_sections:
       - title: Versions
         url: /kaztron/versions.html
         category: default
-  - title: Spotlight
-    description: Apply to feature your world on the Discord server!
+  - title: Community Programs
+    description: Weekly community programs on Discord!
     icon: "fas fa-star"
     buttons:
-      - url: /spotlight
+      - url: /programs
         title: "Read"
   - title: Gridbox
     description: SI Data Portal

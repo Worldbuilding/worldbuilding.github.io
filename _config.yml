@@ -80,13 +80,13 @@ defaults:
       topnav: topnav
   -
     scope:
-      path: "spotlight"
+      path: "programs"
       type: "pages"
     values:
       layout: "page"
       comments: false
       search: true
-      sidebar: spotlight
+      sidebar: programs
       topnav: topnav
   -
     scope:
@@ -112,7 +112,7 @@ defaults:
 
 sidebars:
 - home
-- spotlight
+- programs
 - other
 
 # the description is used in the feed.xml file
