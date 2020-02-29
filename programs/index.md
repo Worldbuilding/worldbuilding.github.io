@@ -87,20 +87,20 @@ And remember that your suggestion doesn't commit you to anything! You're not giv
 
 Still not sure? Check out [the examples](#topics-examples) and the [full list of currently suggested topics](https://docs.google.com/spreadsheets/d/1L3NlDSU6Qu4jMfmbY59sfs7NIkILeJTFcaftsxwVlp4/edit?usp=sharing).
 
-## Can I get notifications when Enthusiast Topics are happening?
+### Can I get notifications when Enthusiast Topics are happening?
 
 Yes! You can type `.spotlight join` in any text channel on Discord. You will know it worked if KazTron PMs you. This works for **both** Enthusiast Topics and World Spotlights (for now it's not possible to get notifications for only one or the other).
 
 To stop getting notifications, type `.spotlight leave`. KazTron will PM you to confirm this too.
 
-## I have other questions or problems.
+### I have other questions or problems.
 
 Come ask us in `#meta`! A mod will respond as soon as one of us is available.
 
 ## World Spotlight
 {: #spotlight }
 
-## What is a Spotlight?
+### What is a Spotlight?
 
 The World Spotlight is a way of showcasing the best worlds the community has to offer and allow members to engage with those worlds' creators! Once or twice a week, one of our members is given the floor for up to 36 hours to present their world to the community and engage in a Q&A. It's a great way to get feedback, critique, and thoughtful questions for your world!
 
@@ -108,7 +108,7 @@ Anyone can join to ask questions or chat with the creator, and all members are i
 
 At the start of each month, we post the Spotlight Host schedule in `#announcements`.
 
-## When do spotlights happen?
+### When do spotlights happen?
 
 Currently, spotlights happen over the weekend and last up to 36 hours (see also the timezone conversion table below):
 
@@ -139,17 +139,17 @@ During daylight savings time ("summer time"), add 1 hour to the start/end time.
 | SEA, Australia Western, China | UTC+8   | Sun 08:00   | Mon 19:59   |
 | Australia Eastern             | UTC+10  | Sun 10:00   | Mon 21:59   |
 
-## How are Spotlight Hosts chosen?
+### How are Spotlight Hosts chosen?
 
 At the start of each month, we post the Spotlight Host schedule in `#announcements`.
 
 The hosts are chosen by random lottery. By filling in an application, you are signing up for that lottery. Towards the end of each month, we will contact potential Spotlight Hosts for the next month, to confirm whether they are still interested and available in a given time slot. Once we have filled up all the slots and gotten confirmation from the hosts, we post the schedule in `#announcements`.
 
-## How do I participate? Can I talk in #community-programs? Can I ask questions to the Host?
+### How do I participate? Can I talk in #community-programs? Can I ask questions to the Host?
 
 Absolutely! Spotlights are meant to be interactive Q&As with other server members! Just make sure that you keep the focus on the Host's world&mdash;don't try to overtake the conversation or bring your own conversation into the channel. Check the rules in `#welcome-rules-etc` for our general and spotlight-specific rules.
 
-## I want a chance to showcase my world. How can I do a Spotlight?
+### I want a chance to showcase my world. How can I do a Spotlight?
 
 Everyone is invited to apply! Click the button below for the application form.
 
@@ -163,16 +163,16 @@ If you don't meet thesee criteria, don't worry! If you've applied, we'll keep yo
 
 <a href="https://goo.gl/forms/uap6PmwzeyheZMJk2" class="btn btn-primary">Apply for Spotlight!</a>
 
-## I want to spotlight. Do I have to be there right at the start, or for 36 hours straight?
+### I want to spotlight. Do I have to be there right at the start, or for 36 hours straight?
 
 Definitely not---you shouldn't neglect sleep or work! We give you a 36-hour timeslot, but you can use as much or as little of it as you want---just let the audience know in `#community-programs` if you're leaving for a few hours or starting up again.
 
-## Can I get notifications when Spotlights are happening?
+### Can I get notifications when Spotlights are happening?
 
 Yes! You can type `.spotlight join` in any text channel on Discord. You will know it worked if KazTron PMs you.
 
 To stop getting notifications, type `.spotlight leave`. KazTron will PM you to confirm this too.
 
-## I have other questions or problems.
+### I have other questions or problems.
 
 Come ask us in `#meta`! A mod will respond as soon as one of us is available.
