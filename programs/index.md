@@ -1,6 +1,6 @@
 ---
 title: "Community Programs"
-last_updated: 29 February 2020
+last_updated: 3 March 2020
 summary: "Every week, we host scheduled community programs on specific topics or worlds. Come join the discussion!"
 ---
 
@@ -89,9 +89,9 @@ Still not sure? Check out [the examples](#topics-examples) and the [full list of
 
 ### Can I get notifications when Enthusiast Topics are happening?
 
-Yes! You can type `.spotlight join` in any text channel on Discord. You will know it worked if KazTron PMs you. This works for **both** Enthusiast Topics and World Spotlights (for now it's not possible to get notifications for only one or the other).
+Yes! You can type `.et join` in any text channel on Discord. You will know it worked if KazTron PMs you.
 
-To stop getting notifications, type `.spotlight leave`. KazTron will PM you to confirm this too.
+To stop getting notifications, type `.et leave`. KazTron will PM you to confirm this too.
 
 ### I have other questions or problems.
 
@@ -159,7 +159,7 @@ You can apply anytime, but note that to be selected as a Spotlight Host in any g
 * You must not have been Spotlight Host in the past 3 months. This includes no-shows, if you do not let us know in advance.
 * You must not have a moderative record (warnings or bans) in the past 3 months.
 
-If you don't meet thesee criteria, don't worry! If you've applied, we'll keep your spotlight application but you won't be considered until you meet these criteria. We'll take care of this on our end, but you can feel free to ask a mod if you're not sure.
+If you don't meet these criteria at any point, don't worry! If you've applied, we'll keep your spotlight application but you won't be considered until you meet these criteria. We'll take care of this on our end, but you can feel free to ask a mod if you're not sure.
 
 <a href="https://goo.gl/forms/uap6PmwzeyheZMJk2" class="btn btn-primary">Apply for Spotlight!</a>
 
