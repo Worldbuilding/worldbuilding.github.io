@@ -1,6 +1,6 @@
 ---
 title: "Community Programs"
-last_updated: 3 March 2020
+last_updated: 1 October 2020
 summary: "Every week, we host scheduled community programs on specific topics or worlds. Come join the discussion!"
 ---
 
@@ -102,42 +102,26 @@ Come ask us in `#meta`! A mod will respond as soon as one of us is available.
 
 ### What is a Spotlight?
 
-The World Spotlight is a way of showcasing the best worlds the community has to offer and allow members to engage with those worlds' creators! Once or twice a week, one of our members is given the floor for up to 36 hours to present their world to the community and engage in a Q&A. It's a great way to get feedback, critique, and thoughtful questions for your world!
+The World Spotlight is a way of showcasing the best worlds the community has to offer and allow members to engage with those worlds' creators! Once a week, one of our members is given the floor for up to 36 hours to present their world to the community and engage in a Q&A. It's a great way to get feedback, critique, and thoughtful questions for your world!
 
 Anyone can join to ask questions or chat with the creator, and all members are invited to apply if they want to host a Spotlight!
 
 At the start of each month, we post the Spotlight Host schedule in `#announcements`.
 
-### When do spotlights happen?
+### When do Spotlights happen?
 
-Currently, spotlights happen over the weekend and last up to 36 hours (see also the timezone conversion table below):
-
-* Saturday Spotlight: Friday 12:00 UTC to Saturday 11:59 UTC
-* Sunday Spotlight: Sunday 00:00 UTC to Monday 11:59 UTC
-
-**Saturday Spotlight**
+Currently, Spotlights happen over the weekend, between 10:00 UTC Friday and 12:00 UTC Monday (see also the timezone conversion table below). The Spotlight lasts up to 36 hours continuously. The start time is chosen by the Host within that weekend timespan.
 
 | Timezone                      | Offset  | Start time  | End time    |
 |:------------------------------|:--------|------------:|------------:|
-| American Pacific              | UTC-7   | Fri 05:00   | Sat 16:59   |
-| American Eastern              | UTC-5   | Fri 07:00   | Sat 18:59   |
-| British Standard              |**UTC+0**|**Fri 12:00**|**Sat 23:59**|
-| Central European              | UTC+1   | Fri 13:00   | Sun 00:59   |
-| SEA, Australia Western, China | UTC+8   | Fri 20:00   | Sun 07:59   |
-| Australia Eastern             | UTC+10  | Fri 22:00   | Sun 09:59   |
+| American Pacific              | UTC-7   | Fri 03:00   | Mon 04:59   |
+| American Eastern              | UTC-5   | Fri 05:00   | Mon 06:59   |
+| British Standard              |**UTC+0**|**Fri 10:00**|**Mon 11:59**|
+| Central European              | UTC+1   | Fri 11:00   | Sun 12:59   |
+| SEA, Australia Western, China | UTC+8   | Fri 18:00   | Sun 19:59   |
+| Australia Eastern             | UTC+10  | Fri 20:00   | Sun 21:59   |
 
 During daylight savings time ("summer time"), add 1 hour to the start/end time.
-
-**Sunday Spotlight**
-
-| Timezone                      | Offset  | Start time  | End time    |
-|:------------------------------|:--------|------------:|------------:|
-| American Pacific              | UTC-7   | Sat 17:00   | Mon 04:59   |
-| American Eastern              | UTC-5   | Sat 19:00   | Mon 06:59   |
-| British Standard              |**UTC+0**|**Sun 00:00**|**Mon 11:59**|
-| Central European              | UTC+1   | Sun 01:00   | Mon 12:59   |
-| SEA, Australia Western, China | UTC+8   | Sun 08:00   | Mon 19:59   |
-| Australia Eastern             | UTC+10  | Sun 10:00   | Mon 21:59   |
 
 ### How are Spotlight Hosts chosen?
 
@@ -163,9 +147,26 @@ If you don't meet these criteria at any point, don't worry! If you've applied, w
 
 <a href="https://goo.gl/forms/uap6PmwzeyheZMJk2" class="btn btn-primary">Apply for Spotlight!</a>
 
-### I want to spotlight. Do I have to be there right at the start, or for 36 hours straight?
+### I want to Spotlight. Do I have to be there right at the start, or for 36 hours straight? Can I break up my 36 hours?
 
-Definitely not---you shouldn't neglect sleep or work! We give you a 36-hour timeslot, but you can use as much or as little of it as you want---just let the audience know in `#community-programs` if you're leaving for a few hours or starting up again.
+Definitely not---you get to choose when during the weekend you want to host your Spotlight! You shouldn't neglect work or sleep.
+
+You can start whenever you want during your Spotlight weekend. From the beginning of your spotlight, you have up to 36 hours to present your world. You can't break this time up into smaller chunks.
+
+You can use as much or as little of the 36 hours as you want---just let the audience know in `#community-programs` if you're leaving for a few hours or starting up again.
+
+### How can I start or stop my spotlight, or let people know if I'm leaving for a while?
+
+Our KazTron bot allows you to start and stop your spotlight:
+
+* `.spotlight start` will start your spotlight and start the 36-hour timer.
+* `.spotlight stop` will end your spotlight early.
+
+If you're just leaving for a while, you can let the audience know in `#community-programs`. You can choose to mention (ping) `@Spotlight Audience`, but do so sparingly: you should not be using that mention more than 2--4 times in one Spotlight.
+
+### How long is left in the current Spotlight?
+
+KazTron will post automated reminders about how long the current Spotlight has left. In addition, the Host and all members of the audience can use the command `.spotlight time` to find out how much time is left on the clock.
 
 ### Can I get notifications when Spotlights are happening?
 
