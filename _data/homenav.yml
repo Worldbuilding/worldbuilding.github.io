@@ -17,9 +17,15 @@ home_sections:
         category: default
   - title: Community Programs
     description: Weekly community programs on Discord!
-    icon: "fas fa-star"
+    icon: "fas fa-guitar"
     buttons:
       - url: /programs
+        title: "Read"
+  - title: Resources List
+    description: Master list of community-submitted worldbuilding resources
+    icon: "fas fa-book"
+    buttons:
+      - url: /resource-list
         title: "Read"
   - title: Gridbox
     description: SI Data Portal
@@ -32,12 +38,12 @@ home_sections:
 - heading: "The /r/Worldbuilding Network"
   items:
   - title: /r/worldbuilding
-    description: Home sweet home!
+    description: Where it all started!
     icon: "fab fa-reddit-alien"
     buttons:
       - external_url: http://reddit.com/r/worldbuilding
   - title: Come chat!
-    description: "Chat with a vibrant community!<br />(IRC details: #worldbuilding on irc.snoonet.org:6697)"
+    description: "Chat with a vibrant community!<br />(For IRC: #worldbuilding on irc.snoonet.org:6697)"
     icon: "fab fa-discord"
     buttons:
       - title: "Discord"

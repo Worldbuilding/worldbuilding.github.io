@@ -25,6 +25,10 @@ entries:
       url: /programs
       output: web, pdf
 
+    - title: Resource List
+      url: /resource-list
+      output: web, pdf
+
     - title: Gridbox
       url: /gridbox
       output: web, pdf

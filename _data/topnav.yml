@@ -18,6 +18,8 @@ topnav_dropdowns:
           url: /kaztron
         - title: Community Programs
           url: /programs
+        - title: Resource List
+          url: /resource-list
         - title: Gridbox
           url: /gridbox
     - title: The Network
