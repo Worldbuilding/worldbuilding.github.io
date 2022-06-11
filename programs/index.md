@@ -8,8 +8,9 @@ Every week, we host scheduled community programmes on our [Discord server](https
 
 Our recurring community programs are:
 
-* [Enthusiast Topic](#topics) are focused, in-depth discussions on a specific topic. Every Tuesday and Thursday at midnight UTC, for 24 hours.
+* [Enthusiast Topic](#topics) are focused, in-depth discussions on a specific topic. Every Tuesday/Wednesday.
 * [World Spotlight](#spotlight) is your chance to shine! We feature one member's world and let them host a discussion about their world. Every weekend.
+* Worldbuilding Sprint: An opportunity for participants to work on a specific aspect of their world! You work on your own world, but the event provides you motivation, community, and a space to discuss ideas or get advice.
 
 Click the links above or scroll below to find out more!
 
@@ -38,37 +39,24 @@ You can [check out the full list of currently suggested topics](https://docs.goo
 
 ### When do they happen?
 
-Tuesday and Thursday at midnight UTC. The discussion lasts 24 hours, but is usually most active in the first couple hours.
+Tuesday at midnight UTC until the end of Wednesday. The discussion lasts 48 hours, but is usually most active in the first couple hours.
 
 **Tuesday Enthusiast Topics**
 
 | Timezone                      | Offset  | Start time  | End time    |
 |:------------------------------|:--------|------------:|------------:|
-| American Pacific              | UTC-7   | Mon 17:00   | Tue 16:59   |
-| American Eastern              | UTC-5   | Mon 19:00   | Tue 18:59   |
-| British Standard              |**UTC+0**|**Tue 00:00**|**Tue 23:59**|
-| Central European              | UTC+1   | Tue 01:00   | Wed 00:59   |
-| SEA, Australia Western, China | UTC+8   | Tue 08:00   | Wed 07:59   |
-| Australia Eastern             | UTC+10  | Tue 10:00   | Wed 09:59   |
-
-During daylight savings time ("summer time"), add 1 hour to the start/end time.
-
-**Thursday Enthusiast Topics**
-
-| Timezone                      | Offset  | Start time  | End time    |
-|:------------------------------|:--------|------------:|------------:|
-| American Pacific              | UTC-7   | Wed 17:00   | Thu 16:59   |
-| American Eastern              | UTC-5   | Wed 19:00   | Thu 18:59   |
-| British Standard              |**UTC+0**|**Thu 00:00**|**Thu 23:59**|
-| Central European              | UTC+1   | Thu 01:00   | Fri 00:59   |
-| SEA, Australia Western, China | UTC+8   | Thu 08:00   | Fri 07:59   |
-| Australia Eastern             | UTC+10  | Thu 10:00   | Fri 09:59   |
+| American Pacific              | UTC-7   | Mon 17:00   | Wed 16:59   |
+| American Eastern              | UTC-5   | Mon 19:00   | Wed 18:59   |
+| British Standard              |**UTC+0**|**Tue 00:00**|**Wed 23:59**|
+| Central European              | UTC+1   | Tue 01:00   | Thu 00:59   |
+| SEA, Australia Western, China | UTC+8   | Tue 08:00   | Thu 07:59   |
+| Australia Eastern             | UTC+10  | Tue 10:00   | Thu 09:59   |
 
 During daylight savings time ("summer time"), add 1 hour to the start/end time.
 
 ### How do I participate?
 
-Just jump into the `#community-programmes` channel, read the last couple messages to catch up, and join the discussion whenever you'd like! You can also check out the original topic in the pins (usually&mdash;the mods sometimes forget to pin it).
+Just jump into the `#community-programs` channel, read some of the recent discussion to catch up, and join in whenever you'd like! You can also check out the original topic in the channel pins.
 
 Most of the time, everyone is chiming in equally. Sometimes one or several members will have more knowledge in the subject and might animate the discussion. No matter what, **it's always a group discussion**: everyone can feel free to chime in! It's not an AMA.
 
